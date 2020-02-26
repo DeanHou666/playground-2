@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./bootstrap.min.css">
+  <title>bookList</title>
+</head>
+<body>
+  <h1>Add Book</h1>
+  <div class="container">
+
+    <form id="book-form">
+      <div class="form-group">
+        <label for="title">Title</label>
+        <input type="text" id="title" class="form-control">
+      </div>
+      <div class="form-group">
+        <label for="author">Author</label>
+        <input type="text" id="author" class="form-control">
+      </div>
+      <div class="form-group">
+        <label for="isbn">ISBN</label>
+        <input type="text" id="isbn" class="form-control">
+      </div>
+      <button type="submit" class="btn btn-primary btn-block submitBtn">submit</button>
+    </form>
+    <br>
+    <div class="panel panel-default">
+      <div class="panel-heading h3">
+      Book List
+      </div>
+    
+      <!-- Table -->
+      <table class="table">
+        <tr class="bg-light" id="th">
+          <th>Title</th>
+          <th>author</th>
+          <th>isbn</th>
+        </tr>
+
+      </table>
+    </div>
+  </div>
+  <script src="app-es6.js"></script>
+</body>
+</html>
